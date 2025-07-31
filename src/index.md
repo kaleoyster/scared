@@ -3,12 +3,13 @@ toc: false
 ---
 
 <div class="hero">
-  <h1>Scared</h1>
-  <h2>Welcome to your new app! Edit&nbsp;<code style="font-size: 90%;">src/index.md</code> to change this page.</h2>
-  <a href="https://observablehq.com/framework/getting-started">Get started<span style="display: inline-block; margin-left: 0.25rem;">↗︎</span></a>
+  <h1>SCARED</h1>
+  <!-- <h2>Analyticals! Edit&nbsp;<code style="font-size: 90%;">src/index.md</code> to change this page.</h2> -->
+  <!-- <a href="https://observablehq.com/framework/getting-started">Get started<span style="display: inline-block; margin-left: 0.25rem;">↗︎</span></a> -->
 </div>
 
 <div class="grid grid-cols-2" style="grid-auto-rows: 504px;">
+
   <div class="card">${
     resize((width) => Plot.plot({
       title: "Your awesomeness over time 🚀",
@@ -21,6 +22,7 @@ toc: false
       ]
     }))
   }</div>
+
   <div class="card">${
     resize((width) => Plot.plot({
       title: "How big are penguins, anyway? 🐧",
