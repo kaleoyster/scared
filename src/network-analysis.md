@@ -9,7 +9,8 @@ This report is a brief overview of the history and current state of rocket launc
 
 This passage explains why network analysis is a powerful alternative (or complement) to traditional latent factor models (like factor analysis) when analyzing psychological symptoms, particularly in tools like SCARED (a screening tool for child anxiety).
 
-## The Space Shuttle era
+
+## 🔗 Network Models vs. Latent Factor Models
 
 ```js
 import {timeline} from "./components/timeline.js";
@@ -22,8 +23,6 @@ const events = FileAttachment("./data/events.json").json();
 ```js
 timeline(events, {height: 300})
 ```
-
-## 🔗 Network Models vs. Latent Factor Models
 
 ### 📌 Latent Factor Models (like Factor Analysis):
 -	Assume symptoms are caused by underlying (latent) factors, like “general anxiety” or “panic disorder.”

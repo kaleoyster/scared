@@ -4,7 +4,7 @@ toc: false
 
 <div class="hero">
   <h1>SCARED</h1>
-  <!-- <h2>Analyticals! Edit&nbsp;<code style="font-size: 90%;">src/index.md</code> to change this page.</h2> -->
+  <h2>Analyzing Child Anxiety Using SCARED Assessment Scores</h2>
   <!-- <a href="https://observablehq.com/framework/getting-started">Get started<span style="display: inline-block; margin-left: 0.25rem;">↗︎</span></a> -->
 </div>
 
@@ -25,11 +25,11 @@ toc: false
 
   <div class="card">${
     resize((width) => Plot.plot({
-      title: "How big are penguins, anyway? 🐧",
+      title: "How does every one fair? 🐧",
       width,
       grid: true,
-      x: {label: "Body mass (g)"},
-      y: {label: "Flipper length (mm)"},
+      x: {label: "Axiety Score (g)"},
+      y: {label: "Discrepancy (mm)"},
       color: {legend: true},
       marks: [
         Plot.linearRegressionY(penguins, {x: "body_mass_g", y: "flipper_length_mm", stroke: "species"}),
@@ -41,7 +41,7 @@ toc: false
 
 ---
 
-## Next steps
+## Analysis
 
 Here are some ideas of things you could try…
 
@@ -49,6 +49,7 @@ Here are some ideas of things you could try…
   <div class="card">
     Chart your own data using <a href="https://observablehq.com/framework/lib/plot"><code>Plot</code></a> and <a href="https://observablehq.com/framework/files"><code>FileAttachment</code></a>. Make it responsive using <a href="https://observablehq.com/framework/javascript#resize(render)"><code>resize</code></a>.
   </div>
+
   <div class="card">
     Create a <a href="https://observablehq.com/framework/project-structure">new page</a> by adding a Markdown file (<code>whatever.md</code>) to the <code>src</code> folder.
   </div>

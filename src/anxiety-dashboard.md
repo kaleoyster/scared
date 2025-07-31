@@ -1,10 +1,10 @@
 ---
 theme: dashboard
-title: Example dashboard
+title: Anxiety Dashboard
 toc: false
 ---
 
-# Rocket launches 🚀
+# Anxiety Dashboard 🧠
 
 <!-- Load and transform the data -->
 
@@ -28,19 +28,19 @@ const color = Plot.scale({
 
 <div class="grid grid-cols-4">
   <div class="card">
-    <h2>United States 🇺🇸</h2>
+    <h2> Total  🇺🇸</h2>
     <span class="big">${launches.filter((d) => d.stateId === "US").length.toLocaleString("en-US")}</span>
   </div>
   <div class="card">
-    <h2>Russia 🇷🇺 <span class="muted">/ Soviet Union</span></h2>
+    <h2>Male 🇷🇺 <span class="muted">/ Soviet Union</span></h2>
     <span class="big">${launches.filter((d) => d.stateId === "SU" || d.stateId === "RU").length.toLocaleString("en-US")}</span>
   </div>
   <div class="card">
-    <h2>China 🇨🇳</h2>
+    <h2>Female 🇨🇳</h2>
     <span class="big">${launches.filter((d) => d.stateId === "CN").length.toLocaleString("en-US")}</span>
   </div>
   <div class="card">
-    <h2>Other</h2>
+    <h2>At Risk</h2>
     <span class="big">${launches.filter((d) => d.stateId !== "US" && d.stateId !== "SU" && d.stateId !== "RU" && d.stateId !== "CN").length.toLocaleString("en-US")}</span>
   </div>
 </div>
