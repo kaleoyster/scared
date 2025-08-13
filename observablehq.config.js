@@ -8,13 +8,18 @@ export default {
   // lets you organize them into sections and have unlisted pages.
   pages: [
     {
-      name: "Scared",
+      name: "Background",
       pages: [
         {name: "Home", path: "/"},
-        {name: "Network Analysis", path: "/network-analysis"},
         {name: "Literature Review", path: "/literature-review"},
-        {name: "Individual Report", path: "/individual-report"},
-        {name: "Group Report", path: "/group-report"},
+        //{name: "Individual Report", path: "/individual-report"},
+        //{name: "Group Report", path: "/group-report"},
+      ]
+    },
+    {
+      name: "Reports",
+      pages: [
+        {name: "Network Analysis", path: "/network-analysis"},
       ]
     }
   ],
