@@ -41,13 +41,11 @@ timeline(events, {height: 300})
 -	Helps identify which specific symptoms are “central” (influential in the network).
 -	🧠 Example: “Dizzy when frightened” might be more central than “trouble sleeping,” which you wouldn’t know from a broad anxiety factor score.
 
-
 ### 2. Comorbidity Mapping: Bridge Symptoms
 -	Networks can show how different disorders are linked.
 -	Bridge symptoms (like “guilt”) connect anxiety and depression.
 -	Latent models can show correlation between factors, but don’t explain why.
 -	🔧 Clinical value: Targeting bridge symptoms could improve both disorders.
-
 
 ### 3. Dynamic Insights: Feedback Loops
 -	Symptoms can reinforce each other (A ↔ B), creating vicious cycles.
@@ -71,9 +69,7 @@ timeline(events, {height: 300})
 
 
 ## 🔬 Methodology Summary
-
 The following is the methodology description of summary:
-
 | Term | Description |
 |------|------------|
 | Nodes | Individual symptoms (e.g., "trouble sleeping", "dizzy when frightened") |
