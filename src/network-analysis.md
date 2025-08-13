@@ -24,18 +24,20 @@ const events = FileAttachment("./data/events.json").json();
 timeline(events, {height: 300})
 ```
 
-### 📌 Latent Factor Models (like Factor Analysis):
+## Latent Factor Models (like Factor Analysis):
 -	Assume symptoms are caused by underlying (latent) factors, like “general anxiety” or “panic disorder.”
 -	Group symptoms based on how they correlate.
 -	Output: scores for each latent factor, but not how individual symptoms relate to each other.
 
-### 🔗 Network Models:
+---
+## Network Models:
 -	Treat symptoms themselves as interacting elements.
 -	No need for a hidden “cause” (like anxiety) – instead, symptoms influence each other directly.
 -	Visualize as graphs: nodes = symptoms, edges = statistical relationships between symptoms (e.g., partial correlations).
 
+---
+## 💡 Key Advantages of Network Models
 
-### 💡 Key Advantages of Network Models
 ### 1. Granularity: Symptom-level detail
 -	Network analysis keeps focus on individual symptoms.
 -	Helps identify which specific symptoms are “central” (influential in the network).
@@ -70,6 +72,7 @@ timeline(events, {height: 300})
 
 ## 🔬 Methodology Summary
 The following is the methodology description of summary:
+
 | Term | Description |
 |------|------------|
 | Nodes | Individual symptoms (e.g., "trouble sleeping", "dizzy when frightened") |
