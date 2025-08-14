@@ -1,16 +1,31 @@
 ---
 toc: true
-theme: [slate]
 ---
 <div class='hero'> 
  <h1>Personalized Anxiety Insights</h1>
 </div>
 
+
+
+```js
+import {arc_diagram} from "./components/arc_diagram.js";
+
+const network_data = FileAttachment("./data/group_symptom_network.json").json();
+```
+
+
+```js
+arc_diagram(network_data)
+```
+*Interactive Network: Hover over symptoms to see details, click to explore connections*
+
 *Individual SCARED Report: Exploring Your Unique Anxiety Profile*
 
-## Understanding Your Anxiety Profile
+## Understanding Group Anxiety Profile
+
+
 <div class="wide-paragraph">
-Welcome to your personalized anxiety assessment report. Instead of simply tallying up symptoms, this analysis uncovers the intricate web of relationships among your anxiety symptoms—showing not just which symptoms you experience, but how they influence and reinforce one another. By mapping these connections, we can highlight the symptoms that are most central to your unique experience and better understand the pathways through which your anxiety manifests and evolves.
+Instead of simply tallying up symptoms, this analysis uncovers the intricate web of relationships among your anxiety symptoms—showing not just which symptoms you experience, but how they influence and reinforce one another. By mapping these connections, we can highlight the symptoms that are most central to your unique experience and better understand the pathways through which your anxiety manifests and evolves.
 </div>
 <br>
 
@@ -29,23 +44,6 @@ Below is an interactive visualization of your anxiety symptom network. Each poin
 </div>
 <br>
 
-```js
-import {arc_diagram} from "./components/arc_diagram.js";
-
-const network_data = FileAttachment("./data/group_symptom_network.json").json();
-```
-
-<div class="grid grid-rows-2">
-<div class="card">
-
-```js
-arc_diagram(network_data)
-```
-
-*Interactive Network: Hover over symptoms to see details, click to explore connections*
-
-</div>
-</div>
 
 ---
 
@@ -176,7 +174,7 @@ Some symptoms act as "bridges" between different clusters of anxiety experiences
   font-size: 0.5vw;
   font-weight: 900;
   line-height: 1;
-  background: linear-gradient(30deg, #fff, #fff);
+  background: linear-gradient(30deg, #000, #000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
