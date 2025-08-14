@@ -12,14 +12,13 @@ export default {
       pages: [
         {name: "Home", path: "/"},
         {name: "Literature Review", path: "/literature-review"},
-        //{name: "Individual Report", path: "/individual-report"},
         //{name: "Group Report", path: "/group-report"},
       ]
     },
     {
-      name: "Reports",
+      name: "Analysis",
       pages: [
-        {name: "Network Analysis", path: "/network-analysis"},
+        {name: "Group Network Analysis", path: "/group-network-analysis"},
       ]
     }
   ],
@@ -29,19 +28,17 @@ export default {
 
   // The path to the source root.
   root: "src",
-
   // Some additional configuration options and their defaults:
   theme: "light", // try "light", "dark", "slate", etc.
-
-  // header: "", // what to show in the header (HTML)
-   footer: "&copy; 2024, Akshay Kale.", // what to show in the footer (HTML)
-  // sidebar: true, // whether to show the sidebar
-  // toc: true, // whether to show the table of contents
+  //header: "SCARED Symptom Network Explorer", // what to show in the header (HTML)
+  footer: "&copy; 2024, Akshay Kale.", // what to show in the footer (HTML)
+  sidebar: true, // whether to show the sidebar
+  toc: false, // whether to show the table of contents
   // pager: true, // whether to show previous & next links in the footer
   // output: "dist", // path to the output root for build
-  // search: true, // activate search
+  search: true, // activate search
   // linkify: true, // convert URLs in Markdown to links
-  // typographer: false, // smart quotes and other typographic improvements
+  typographer: true, // smart quotes and other typographic improvements
   // preserveExtension: false, // drop .html from URLs
   // preserveIndex: false, // drop /index from URLs
 };

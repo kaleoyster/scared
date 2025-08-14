@@ -17,13 +17,9 @@ Network analysis has emerged as a powerful method for understanding these report
 
 ```js
 import {timeline} from "./components/timeline.js";
-```
 
-```js
 const events = FileAttachment("./data/events.json").json();
-```
 
-```js
 timeline(events, {height: 300})
 ```
 
